@@ -53,7 +53,7 @@ public class PromptDialog extends Dialog {
     }
 
     public PromptDialog(Context context, int theme) {
-        super(context, R.style.color_dialog);
+        super(context, R.style.colorDialog);
         init();
     }
 

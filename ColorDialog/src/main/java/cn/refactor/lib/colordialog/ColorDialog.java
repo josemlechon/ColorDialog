@@ -55,7 +55,7 @@ public class ColorDialog extends Dialog implements View.OnClickListener {
     }
 
     public ColorDialog(Context context, int theme) {
-        super(context, R.style.color_dialog);
+        super(context, R.style.colorDialog);
         init();
     }
 
@@ -110,11 +110,11 @@ public class ColorDialog extends Dialog implements View.OnClickListener {
         } else if (null == mPositiveListener && null != mNegativeListener) {
             mPositiveBtn.setVisibility(View.GONE);
             mDividerView.setVisibility(View.GONE);
-            mNegativeBtn.setBackgroundDrawable(getContext().getResources().getDrawable(R.drawable.sel_def_gray));
+            mNegativeBtn.setBackgroundResource(R.drawable.sel_def_gray);
         } else if (null != mPositiveListener && null == mNegativeListener ) {
             mNegativeBtn.setVisibility(View.GONE);
             mDividerView.setVisibility(View.GONE);
-            mPositiveBtn.setBackgroundDrawable(getContext().getResources().getDrawable(R.drawable.sel_def_gray));
+            mPositiveBtn.setBackgroundResource(R.drawable.sel_def_gray);
         }
 
         if (null != mDrawable) {
